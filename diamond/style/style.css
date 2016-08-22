@@ -1,0 +1,18 @@
+.crystalImage {
+      width: 300px;
+      height: 300px;
+    }
+ h1 {
+ 	color: #ff00ff;
+ }
+ body {
+ 	background-image: url("seven.jpg");
+ 	background-repeat: no-repeat;
+ 	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+	color: #fff;
+}
+ 
