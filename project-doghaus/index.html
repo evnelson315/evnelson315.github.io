@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to Google Fonts directory -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <!-- Link to Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+    <!-- Link to Animsition JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
+    <!-- Link to Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <!-- Link to our JS -->
+    <script src="assets/javascript/main.js"></script>
+
+    <!-- Link to our carousel options JS -->
+    <script src="assets/javascript/carousel.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Link to Animsition CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+
+   <!-- Link to Slick Carousel CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"> 
+
+    <!-- Link to our Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Dog Haüs - Home</title>
+</head>
+
+<body>
+<div class="animsition"> <!-- Begin animsition -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo">
+                    </a>
+                </div> <!-- End navbar-header -->
+
+                <!-- Hamburger Menu Div -->
+                <div class="burgerMenu">
+                    <ul>
+                        <li class="text-center"><a href="reservations.html">Reservations </a></li>
+                        <li class="text-center"><a href="location.html">Location</a></li>
+                        <li class="text-center"><a href="amenities.html">Amenities</a></li>
+                    </ul>
+                </div> 
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navButton" id="activeButton">
+                            <a href="index.html" class="animsition-link">Home</a>
+                        </li>
+                        <li class="navButton">
+                            <a href="reservations.html" class="animsition-link">Reservations</a>
+                        </li>
+                        <li class="navButton">
+                            <a href="location.html" class="animsition-link">Location</a>
+                        </li>
+                        <li class="navButton">
+                            <a href="amenities.html" class="animsition-link">Amenities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <div class="container" id="bigContainer">
+
+        <!-- Header -->
+        <header>
+            <h2 class="text-center">Welcome to the Dog Haüs!</h2>
+        </header>
+
+        <!-- Picture Gallery -->
+        <div class="fadingDogPics">
+            <div><img src="assets/images/animal1.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal2.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal3.jpg" class="carouselImage"></div>
+            <div><img src="assets/images/animal4.jpg" class="carouselImage"></div>
+        </div>
+
+        <!-- Main Description/Text Content -->
+        <div class="container">
+            <div>
+                <p class>The Dog Haüs is a new hotel that is built from the ground up with travelling dog-owners in mind. We are located in Austin, Texas. Our city has so much to offer to you and your four-legged friend, and we want to help y'all make the most of your stay here.</p>
+            </div>
+            <img src="assets/images/dog_icon.png" alt="Dog Icon" class="paragraphDogIcon">
+            <div>
+                <p>Are you looking to jog around beautiful Lady Bird Lake in the morning? We are a few short minutes' stroll from the trail head. Does your pooch need a kind hand for grooming? We work with local dog groomers to primp, pamper, and otherwise spoil your best friend. Or, do you want to be able to go enjoy some live music and libations without worrying about your pup? We can arrange for experienced and caring dog-sitters to keep your dog exercised and happy.</p>
+            </div>
+            <img src="assets/images/dog_icon_left.png" alt="Dog Icon" class="paragraphDogIcon">
+            <div>
+                <h4 class="text-center">We hope you wind up in the Dog Haüs!</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div id="footer">
+            <div class="container">
+                <div class="weatherDiv"></div> <!-- Empty div for API data -->
+                <div class="copyrightDiv">
+                    <p class="text-muted" id="footer-text">&copy 2016 Dog Haus Industries</p>
+                </div>
+                <div class="socialMediaDiv"> <!-- Media Icons -->
+                    <div id="socialMediaIcons">
+                        <a href="https://twitter.com/zilkerbark">
+                            <img src="assets/images/twitter_icon.png" alt="Twitter Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.instagram.com/zilkerbark/">
+                            <img src="assets/images/insta_icon.png" alt="Instagram Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.facebook.com/zilkerbark/">
+                            <img src="assets/images/facebook_icon.png" alt="Facebook Icon" class="socialMediaImages">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End animsition -->
+</body>
+</html>

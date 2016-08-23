@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to Google Fonts directory -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <!-- Link to Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+    <!-- Link to Animsition JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
+    <!-- Link to our custom validator js -->
+    <script src="assets/javascript/validate.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Link to Animsition CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+
+    <!-- Link to our JS -->
+    <script src="assets/javascript/main.js"></script>
+
+    <!-- Link to our Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Dog Haüs - Reservations</title>
+</head>
+
+<body>
+<div class="animsition"> <!-- Begin animsition -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt ="Dog Haus Logo" id="logo">
+                    </a>
+                </div>
+
+                <!-- Hamburger Menu Div -->
+                <div class="burgerMenu">
+                    <ul>
+                        <li class="text-center"><a href="index.html">Home</a></li>
+                        <li class="text-center"><a href="location.html">Location</a></li>
+                        <li class="text-center"><a href="amenities.html">Amenities</a></li>
+                    </ul>
+                </div> 
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navButton">
+                            <a href="index.html" class="animsition-link">Home</a>
+                        </li>
+                        <li class="navButton" id="activeButton">
+                            <a href="reservations.html" class="animsition-link">Reservations</a>
+                        </li>
+                        <li class="navButton" >
+                            <a href="location.html" class="animsition-link">Location</a>
+                        </li>
+                        <li class="navButton" >
+                            <a href="amenities.html" class="animsition-link">Amenities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <div class= "container" id="bigContainer">
+
+        <!-- Header -->
+        <header>
+            <h3 class="text-center">Reserve your sweet suite home today!</h3>
+        </header>
+
+        <div id="overallReservation"> <!-- Main container for check in/out -->
+            <div class="dateSub">
+                <div class="reservationBox">
+                     <div class="title">Click your Check in</div>
+                     <input type="text" id="arr_date">
+                </div>
+
+                <div class="reservationBox">
+                     <div class="title">Click your Check Out</div>
+                     <input type="text" id="dep_date">
+                </div>
+             </div>
+            <!-- End of the select dates -->
+
+            <!-- Suite Selector Div -->
+            <div id="roomSelector">
+                <h4>Room Selection</h4>
+                <form id="room">
+                    <input type="radio" name="room" value=100> Standard Room @ $100<br>
+                    <input type="radio" name="room" value=250> Deluxe Suite @ $250<br>
+                </form>
+                <button class="btn navButton roomSelector">Room Estimate</button>
+                <div class="form-group">
+                     <p id="res"></p>
+                </div>
+            </div>
+                
+                <!-- Reservation/Input Auth page -->
+                <div id="onHold">
+                    <h4>Reserve your room</h4>
+                    <form id ="resInfoForm">
+                        First name:<br>
+                        <input class="guestName guestName1" type="text" name="firstname">
+                        <br>
+                        Last name:<br>
+                        <input class="guestName guestName2" type="text" name="lastname"><br>
+                        Email:<br>
+                        <div class="popupDiv popupDivEmail popupDivError"></div>
+                        <input id="emailCapture" type="text" name="email">
+                        <br>
+                        Phone Number:<br>
+                        <div class="popupDiv popupDivPhone popupDivError"></div>
+                        <div class="phoneNumInputs">
+                            <input id="num1" type="text" name="phoneNumber" maxlength="3" class="threeNum text-center"><p class="doNotSpace"> - </p>
+                            <input id="num2" type="text" name="phoneNumber" maxlength="3" class="threeNum text-center"><p class="doNotSpace"> - </p>
+                            <input id="num3" type="text" name="phoneNumber" maxlength="4" class="fourNum text-center">
+                        </div>
+                        <br>
+                        <input class="sendThisAlready btn navButton" type="submit" value="Submit">
+                        <div class="popupDiv popupDivSuccess"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <div id="footer">
+            <div class="container">
+                <div class="weatherDiv"></div>
+                <div class="copyrightDiv">
+                    <p class="text-muted" id="footer-text">&copy 2016 Dog Haus Industries</p>
+                </div>
+                <div class="socialMediaDiv">
+                    <div id="socialMediaIcons">
+                        <a href="https://twitter.com/zilkerbark">
+                            <img src="assets/images/twitter_icon.png" alt="Twitter Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.instagram.com/zilkerbark/">
+                            <img src="assets/images/insta_icon.png" alt="Instagram Icon" class="socialMediaImages">
+                        </a>
+                        <a href="https://www.facebook.com/zilkerbark/">
+                            <img src="assets/images/facebook_icon.png" alt="Facebook Icon" class="socialMediaImages">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End animsition -->
+<!-- Some tags required/designed to be placed at bottom of body element -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+<script src="assets/javascript/jquery-ui.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<script src="assets/javascript/reservation.js"></script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+/*
+  =====================================
+  Navigation Pane
+  =====================================
+*/
+.navbar {
+	background-color: #fff;
+	height: 70px;
+	margin: 0 0 10px 0;
+	border-style: none;
+}
+
+.navbar-brand {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	height: 80px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	padding-top: 15px;
+	padding-bottom: auto;
+}
+
+#activeButton {
+	background-color: #e7e7e7;
+	border-radius: 5px;
+}
+
+.navButton:hover {
+	background-color: #00ace8;
+	border-radius: 5px;
+}
+
+/*
+  =====================================
+  General Custom Styles
+  =====================================
+*/
+body {
+	font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#bigContainer {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #009796;
+	min-height: 80%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto;
+	/* Pad bottom by footer height */
+	padding: 0px;
+	border-radius: 5px;
+}
+
+/*Location Page*/
+.row {
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.col-md-3 {
+	margin-left: 20px;
+}
+.threeNum,
+.fourNum,
+.doNotSpace {
+	display: inline;
+}
+
+/*
+  =====================================
+  Footer
+  =====================================
+*/
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 10%;
+  background-color: #fff;
+}
+
+/* Left Side weather */
+.weatherDiv {
+	float: left;
+	width: 42%;
+	margin-top: 10px;
+}
+
+/* Centered footer text */
+.copyrightDiv {
+	float: left;
+	width: 33%;
+	margin-top: 10px;
+}
+
+#footer-text {
+	float: left;
+}
+
+/* Social Media */
+#socialMediaIcons {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 128px;
+}
+
+.socialMediaDiv {
+	float: right;
+	width: 25%;
+	margin-top: 5px;
+}
+
+.socialMediaImages {
+	height: 40px;
+	float: right;
+}
+
+/*
+  =====================================
+  Index.html image carousel
+  =====================================
+*/
+.fadingDogPics {
+	margin: 0;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.stick-track {
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.carouselImage {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+}
+.slick-dots {
+	width: 50%;
+}
+
+/*
+  =====================================
+  Home Page(index.html) Styling
+  =====================================
+*/
+.paragraphDogIcon {
+	height: 60px;
+	display: block;
+    margin: 0 auto;
+}
+
+/*
+  =====================================
+  Location Page
+  =====================================
+*/
+#navigationPage {
+	padding: 0;
+	margin: 0;
+}
+
+.locationInfo {
+	width: 30%;
+	height: 70%;
+	display: inline-block;
+	float: right;
+	padding: 0;
+	padding-right: 0px;
+	margin-top: 30px;
+	margin-right: 5%;
+	margin-left: 2%;
+}
+
+p {
+	margin: 0;
+}
+
+.panel-heading {
+	padding: 5px 10px 5px 10px;
+	width: 100%;
+	margin: 0;
+}
+
+.panel-body {
+	padding: 5px 10px 5px 10px;
+	margin: 0;
+}
+
+.form-horizontal {
+	padding: 5px 10px 5px 10px;
+	margin: 0px 5px;
+}
+
+#inputMessage {
+	height: 114px;
+}
+
+#submitButton {
+	color: #777;
+	background-color: #e7e7e7
+}
+
+#submitButton:hover {
+	background-color: #00ace8;
+	color: #333;
+}
+
+/*
+  =====================================
+  Location Page: Map
+  =====================================
+*/
+#map {
+	max-width: 640px;
+	width: 50%;
+	height: 70%;
+	background-color: #333;
+	padding: 0;
+	margin-top: 30px;
+	margin-left: 5%;
+	margin-right: 6%;
+	display: inline-block;
+	float: left;
+	position: absolute;
+}
+
+/*
+	=====================================
+	Amenities Gallery CSS
+	=====================================
+*/
+.photoGallery {
+	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 15px;
+}
+
+.topGalleryImg {
+	display: inline;
+	height: 100%;
+	width: 100%;
+}
+
+.photoGallery div {
+	overflow: none;
+}
+
+/* Amenities h3 indent */
+#amenitiesLists h3 {
+	padding-left: 15px;
+}
+
+.amenitiesRow {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+/*
+	=====================================
+	Burger Menu CSS
+	=====================================
+*/
+.burgerMenu {
+	background-color: #ddd;
+	float:right;
+	border-radius:4px;
+	position: absolute;
+	z-index: 9;
+	right:0;
+}
+
+.burgerMenu ul {
+	list-style-type: none;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.burgerMenu li a {
+	color:black;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+
+/* 
+	=====================================
+	Reservation Styles
+	=====================================
+*/
+#overallReservation {
+	width: 100%;
+	height: 275px;
+}
+
+.dateSub {
+	width: 50%;
+	height: 275px;
+	padding: 0 15px 250px 0;
+	margin: 0;
+	float: left;
+}
+
+.ui-datepicker-calendar {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.ui-datepicker-title {
+	background-color: #fff;
+}
+
+.ui-datepicker-header {
+	background-color: #fff;
+}
+
+.reservationBox {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border-bottom: 300px, solid, #fff;
+}
+
+#roomSelector {
+	height: 275px;
+	width: 25%;
+	margin: 0;
+	float: left;
+}
+
+#onHold {
+	width: 25%;
+	height: 275px;
+	margin: 0;
+	float: left;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.phoneNumInputs {
+	display:inline;
+}
+
+.threeNum {
+	max-width: 35px;
+}
+
+.fourNum {
+	max-width:50px;
+}
+
+.sendThisAlready {
+	margin-top:6px;
+	color: #777;
+	background-color: #e7e7e7
+}
+
+.sendThisAlready:hover {
+	margin-top:6px;
+	background-color: #00ace8;
+	color: #333;
+}
+.roomSelector {
+	color: #777;
+	background-color: #e7e7e7
+}
+
+.roomSelector:hover {
+	background-color: #00ace8;
+	color: #333;
+}
+
+/*
+	=====================================
+	Modals
+	=====================================
+*/
+.popupDivError {
+	background-color: rgba(255, 255, 255, .0);
+	color:red;
+}
+.popupDivSuccess, .commentMSG, #res {
+	background-color: rgba(50, 200, 50, .7);
+	color:white;
+	border-radius: 10px;
+	padding:6px;
+}
+
+/*
+	=====================================
+	Media Queries
+	=====================================
+*/
+@media(max-width:992px) {
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#footer-text {
+		float: none;
+	}
+
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#socialMediaIcons {
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
+	}
+
+	.topGalleryImg{
+		max-width: 326px;
+	}
+
+	.imageCol{
+		display: inline-block;
+		padding-bottom: 15px;
+	}
+
+	.placeColumn{
+		display: none;
+	}
+
+	#map{
+		max-width: 400px;
+		width: 50%;
+		height: 60%;
+		margin-left: 3%;
+	}
+
+	.locationInfo{
+		width: 35%;
+		height: 70%;
+		margin-right: 3%;
+	}
+
+} /* end 769px-992px */
+
+@media(max-width: 768px) {
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#footer-text {
+		float: none;
+	}
+
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#socialMediaIcons {
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
+	}
+
+	.photoGallery {
+		display:block;
+	}
+
+	.topGalleryImg {
+		max-width: 999px;
+	}
+
+	.imageCol {
+		margin: 0 10%;
+		width:80%;
+		padding-bottom: 15px;
+	}
+
+	.placeColumn {
+		display: none;
+	}
+
+	.locContentDiv {
+		width:100%;
+		display:block;
+	}
+
+	#map {
+		width: 90%;
+		height: 30%;
+		margin: 20px;
+		padding: 0;
+	}
+
+	.locationInfo {
+		float: none;
+		width: 90%;
+		margin: 350px 20px 20px 20px;
+		display: block;
+	}
+
+	#overallReservation {
+		width: 100%;
+		height: 100%;
+	}
+
+	.dateSub {
+		width: 60%;
+		height: 100px;
+		padding: 0 15px 100px 0;
+		margin: 0 0 0 15px;
+		float: none;
+		display: inline-block;
+	}
+
+	.reservationBox {
+	    display: inline-block;
+	    height: 100px;
+	    width: 200px;
+	    padding: 10px;
+	    border-bottom: 300px, solid, #fff;
+	}
+
+	#roomSelector {
+		height: 200px;
+		width: 30%;
+		margin: 0 0 0 15px;
+		float: none;
+		display: inline-block;
+	}
+
+	#onHold {
+		width: 100%;
+		height: 320px;
+		margin: 0 0 0 15px;
+		float: left;
+		float: none;
+		display: block;
+	}
+
+} /* End 481-768px */
+
+@media(max-width: 480px) {
+	.weatherDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.copyrightDiv {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.socialMediaDiv {
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#footer-text {
+		float: none;
+	}
+
+	.socialMediaImages {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#socialMediaIcons {
+		margin: 0 auto;
+		padding: 0;
+		width: 128px;
+	}
+
+	#map {
+		width: 85%;
+		height: 30%;
+		margin: 20px;
+		padding: 0;
+	}
+
+	.locationInfo {
+		float: none;
+		width: 85%;
+		margin: 350px 20px 20px 20px;
+		display: block;
+	}
+
+	#overallReservation {
+		width: 100%;
+		height: 100%;
+	}
+
+	.dateSub {
+		width: 100%;
+		height: 275px;
+		padding: 0 15px 250px 0;
+		margin: 0 0 0 15px;
+		float: none;
+		display: block;
+	}
+
+	.reservationBox {
+	    display: inline-block;
+	    height: 130px;
+	    width: 200px;
+	    padding: 10px;
+	    border-bottom: 300px, solid, #fff;
+	}
+
+	#roomSelector {
+		height: 200px;
+		width: 100%;
+		margin: 0 0 0 15px;
+		float: left;
+		float: none;
+		display: block;
+	}
+
+	#onHold {
+		width: 100%;
+		height: 320px;
+		margin: 0 0 0 15px;
+		float: left;
+		float: none;
+		display: block;
+	}
+	
+} /* End < 480px */
