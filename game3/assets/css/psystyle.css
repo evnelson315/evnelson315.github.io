@@ -1,0 +1,21 @@
+body {
+	background-image: url("../images/Solar-U4-Belt-of-Dust.jpg");
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+h1 {
+	font-size: 24px;
+}
+#game {
+	font-size: 16px;
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}
+
