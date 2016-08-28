@@ -1,0 +1,146 @@
+<html>
+<head>
+	<title>HW6 Giphy</title>
+	<style type="text/css">
+		button, div, form, input {
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Giphy Search</h1>
+
+  <!-- Queries will get dumped here -->
+  <div id="giphyView">
+
+  </div>
+
+  <form id="giphy-form">
+    <label for="giphy-input">Find your dream car</label>
+    <input type="text" id="giphy-input"><br>
+    
+    <!-- Button triggers new giphy to be added -->
+    <input id="addGiphy" type="submit" value="Seach">
+  </form>
+
+  <div id="itgoeshere"></div>
+
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type="text/javascript">
+
+	// array of buttons
+	var currentMovie = $(this).attr("data-name")
+	var movies = [];
+	
+	// var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + currentMovie + "&api_key=dc6zaTOxFJmzC&limit=10";
+
+	// ========================================================
+
+	// Generic function for displaying movie data 
+	function renderButtons(){ 
+
+		// Deletes the movies prior to adding new movies (this is necessary otherwise you will have repeat buttons)
+		$("#giphyView").empty();
+
+
+		// Loops through the array of movies
+		for (var i = 0; i < movies.length; i++) {
+
+			 var a = $("<button>")
+			
+			 a.addClass('movie');
+			 a.attr('data-name', movies[i]);
+			 a.text(movies[i]);
+			$("#giphyView").append(a);
+			// Then dynamicaly generates buttons for each movie in the array
+		}
+
+	}
+	 $('body').on('click', '.movie', function() {
+      var currentMovie = ($(this).attr("data-name"));
+      	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + currentMovie + "&api_key=dc6zaTOxFJmzC&limit=10";
+           
+           
+            $.ajax({url: queryURL, method: 'GET'})
+
+            // waits for function to run complete
+            .done(function(response) {
+            		
+                // turns data from query into image.
+               // var imageUrl = response.data[0].images.fixed_height.url;
+               var results = response.data;
+                
+                for (var i = 0; i < results.length; i++) {
+                    var gifDiv = $('<div class="item">')
+
+                    var rating = results[i].rating;
+                    var p = $('<p>').text("Rating: " + rating);
+	
+                // turns into html element
+                var imgResults = $("<div>")
+                var giphyImage = $("<img>");
+                giphyImage.attr('src', results[i].images.fixed_height.url);
+                
+                // sets image url as source. alt will just post pic or for other web services
+                // giphyImage.append(giphyImage);
+                imgResults.append("<h2>Rating: "+rating+" </h2>");
+                imgResults.append(giphyImage);
+                
+
+                // posts to html
+                $('#itgoeshere').prepend(giphyImage,"<h2>Rating: "+rating+" </h2>");
+               }
+            });
+
+     // //   var all =  ob1[];
+     // //push: still , animate url.    
+
+     // 		 var state = $(this).attr('data-state');
+
+     //        		      if ( state == 'still'){
+     //            $(this).attr('src', $(this).data('animate'));
+     //            $(this).data('state', 'animate');
+     //        }else{
+     //            $(this).attr('src', $(this).data('still'));
+     //            $(this).data('state', 'still');
+     //        }
+    
+     // //        //----------------------------------------------------
+
+     // //        //STEP FOUR: open the file in the browser and click on the images. Then click again to pause.
+	    // // });
+
+
+
+
+
+    });
+
+		// //$(‘body’).on(‘click’, ‘.myNewButtonsClass’, function() {console.log(‘hello’)}) Use this somewhere 
+		// "what this does is it has the body listen for click events, but only pay attention to click event came from something with myNewButtonsClass.  So even though those buttons aren’t there when the page loads it’s ok becuase the click handler was already assigned to something that was there" //
+	// ========================================================
+
+	// This function handles events where one button is clicked
+	$('#addGiphy').on('click', function(){   
+
+		// This line of code will grab the input from the textbox
+		var movie = $('#giphy-input').val().trim();
+
+		// The movie from the textbox is then added to our array
+		movies.push(movie);
+		
+		// Our array then runs which handles the processing of our movie array
+		renderButtons();
+
+
+		// We have this line so that users can hit "enter" instead of clicking on ht button and it won't move to the next page
+		return false;
+	})
+
+</script>
+
+
+</body>
+</html>
