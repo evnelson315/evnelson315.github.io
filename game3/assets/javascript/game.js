@@ -16,7 +16,7 @@ document.onkeyup = function(event) {
 	// This sets the computer guess equal to the random.
 	var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-	// Making sure the user chooses r, p, or s
+	//
 	if (userGuess == computerGuess){
 			wins++, attempts = "9";
 		console.log("Awesome! Computer was thinking" + " " +computerGuess);
