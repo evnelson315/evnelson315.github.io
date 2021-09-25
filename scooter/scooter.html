@@ -15,6 +15,29 @@
   font-size: 30px;
   text-align: center;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
 </head>
 <body>
@@ -26,43 +49,61 @@
 <p>These are based off of yamaha zuma and yamaha vino engines. YMMY</p>
 
 <div class="grid-container">
-  <div class="grid-item">Intended Use</div>
+  <div class="grid-item">
+<div class="tooltip">Intended Use
+  <span class="tooltiptext">Please pick each combo wisely. Each have pros and cons.</span>
+</div>
+   </div>
   <div class="grid-item">Cylinder</div>
   <div class="grid-item">Carb</div> 
   <div class="grid-item">Main Jet</div>
   <div class="grid-item">Crank</div>
   <div class="grid-item">Exhaust</div>
-  <div class="grid-item">Clutch Spring</div>  
+  <div class="grid-item">Clutch Spring RPM</div>  
   <div class="grid-item">OEM +</div>
   <div class="grid-item">Polini 70cc</div>
   <div class="grid-item">Stock</div>  
   <div class="grid-item">11</div>
-  <div class="grid-item">12</div>
+  <div class="grid-item">stock</div>
   <div class="grid-item">13</div>
   <div class="grid-item">1</div>
-  <div class="grid-item">Sport</div>
+  <div class="grid-item">70cc Sport Cast Iron</div>
   <div class="grid-item">3</div>  
   <div class="grid-item">4</div>
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>  
   <div class="grid-item">7</div>
   <div class="grid-item">8</div>
-  <div class="grid-item">Race</div>
+  <div class="grid-item">70cc Sport Aluminum</div>
   <div class="grid-item">10</div>  
   <div class="grid-item">11</div>
   <div class="grid-item">12</div>
   <div class="grid-item">13</div>
   <div class="grid-item">11</div>
   <div class="grid-item">12</div>
-  <div class="grid-item">13</div>
+  <div class="grid-item">Race</div>
   <div class="grid-item">1</div>
   <div class="grid-item">2</div>
   <div class="grid-item">3</div>  
   <div class="grid-item">4</div>
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
+  <div class="grid-item"></div>
   <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+  <div class="grid-item">10</div>  
+  <div class="grid-item">11</div>
+  <div class="grid-item">12</div>
+  <div class="grid-item">13</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item"></div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+  <div class="grid-item">10</div>  
+  <div class="grid-item">11</div>
+  <div class="grid-item">12</div>
+  <div class="grid-item">13</div>
   <div class="grid-item">9</div>
   <div class="grid-item">10</div>  
   <div class="grid-item">11</div>
