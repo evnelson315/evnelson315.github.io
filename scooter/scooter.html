@@ -21,6 +21,7 @@
   background-color: #2196F3;
   padding: 10px;
 }
+
 .grid-item1 {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -77,6 +78,485 @@ position: absolute;
 }
 </style>
 </head>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Minarelli Build List</h1>
+
+<h2>Sport-Street</h2>
+<h3>Below 10 k rpm builds mostly cast irons</h3>
+<button class="collapsible">Stock Cylinder</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">
+       <p id="column1"></p>
+       <br><img src="https://www.scootertuning.ca/9726-tm_large_default/replacement-cylinder-kit-50cc-10mm-minarelli-horizontal.jpg" alt="Flowers in Chania" width="460" height="345"><br>
+      Standard 50cc displacement. Iron Bore. Will wake up with a pipe and jetting.
+    </div>
+  <div class="grid-item">
+  <p id="column2"></p>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+ <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+  <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Leo Vince ZX</h3></button>
+</ul>
+   </div>
+  <div class="grid-item">
+<p id="column3"></p>
+<p id="demo">Please make your exhaust selection to see which carb is best suited for it.</p>
+
+  
+</div>
+</div>
+</div>
+</div>
+
+
+<button class="collapsible">Airsal 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/airsal_2048x.JPG?v=1568796943" alt="Flowers in Chania" width="460" height="345"><br>
+      A very solid entry level cylinder. Good for about 7-10 HP depending on supporting parts. Aluminum cylinder with Ni coating.
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Exhaust
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+ <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+  <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Leo Vince ZX</h3></button>
+</ul>
+   </div>
+  <div class="grid-item">
+<p id="column3"></p>
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+  
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">NCY 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345"><br>Cast Iron bore, 2 ring design. Good Performer with stock to mild pipes.
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Exhaust
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+ <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+  <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Leo Vince ZX</h3></button>
+</ul>
+   </div>
+
+
+  <div class="grid-item">
+<div class="tooltip">Carb
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+<br>
+</div>
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+  
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Top Performance Trophy 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345"><br>Cast Iron bore, 2 ring design. Good Performer with stock to mild pipes.
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Exhaust
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+ <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+  <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Leo Vince ZX</h3></button>
+</ul>
+   </div>
+
+
+  <div class="grid-item">
+<p id="column3"></p>
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+  
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<button class="collapsible">Polini Contessa 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345"><br>Cast Iron bore, 2 ring design. Good Performer with stock to mild pipes.
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Exhaust
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+ <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+  <button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Leo Vince ZX</h3></button>
+</ul>
+   </div>
+
+
+  <div class="grid-item">
+<div class="tooltip">Carb
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+<br>
+</div>
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+  
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h2>Mid-Race</h2>
+<h3>10k to 12 k rpm builds mostly Single Ring Aluminum or Ported Cast Iron Sports kits</h3>
+<button class="collapsible">Airsale T-6 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345"><br>Cast Iron bore, 2 ring design. Good Performer with stock to mild pipes.
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Exhaust
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+<h5>Please select your exhaust to determine the appropriately matched carb</h5>
+  <ul>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+<button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+<button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button><br>
+<button onclick="myFunction()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Stock Exhaust</h3></button>
+<button onclick="myFunction1()">
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/wildlion2_2048x.JPG?v=1527342048" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+<button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/1011/2432/products/pipepolini_2048x.jpg?v=1568826302" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+<button type="button" >
+      <img src="https://cdn.shopify.com/s/files/1/0004/3312/7455/products/65f2b37764183297db35b372b0bb2625_540x.jpg?v=1632836541" alt="Flowers in Chania" width="230" height="172">
+       <h3>Malossi Wild Lion</h3></button>
+</ul>
+   </div>
+
+
+  <div class="grid-item">
+<div class="tooltip">Carb
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+<br>
+</div>
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+  
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<button class="collapsible">Malossi Sport 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/airsal_2048x.JPG?v=1568796943" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Polini Corsa 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Stage6 Street Race 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Stage6 Sport Pro MKII 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/ncyzuma_2048x.JPG?v=1537623444" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h2>Race</h2>
+<h3>Race 12k rpms and above Single ring Aluminum bridged exhaust ports</h3>
+<button class="collapsible">NCY Race 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/1100-1245_2048x.jpg?v=1569178807" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+
+<button class="collapsible">Stage6 MKII Race 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1060/0406/products/S6-7416603_cda5edf4-2e3b-4c92-b16c-4466a171f7e4_1024x1024.jpg?v=1527179095" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Malossi MHR 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/m318440_zylinderkit_malossi_mhr_minarelli_lieg_ac_web_2048x.jpg?v=1569285981" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+
+<h2>Hyper Race</h2>
+<h3>Race 12k rpms and above Single ring Aluminum bridged exhaust ports, liquid cooled</h3>
+<button class="collapsible">2FAST 70 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://www.tuningmatters.com/wp-content/uploads/2012/07/315392_493640233984772_1351127943_n.jpg" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<button class="collapsible">Top Performance TPR 86 cc</button>
+<div class="content">
+<div class="grid-container1">
+    <div class="grid-item1">Cylinder<br><img src="https://cdn.shopify.com/s/files/1/1011/2432/products/airsal_2048x.JPG?v=1568796943" alt="Flowers in Chania" width="460" height="345">
+    </div>
+  <div class="grid-item">
+<div class="tooltip">Sport-Street
+  <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
+</div>
+   </div>
+  <div class="grid-item">
+<div class="tooltip">Mid-Race
+  <span class="tooltiptext">10k to 12k RPM. Mostly Single Ring Aluminum cylinder or Ported Cast Iron Sports kits. Reinforced Crankshaft Strongly Recommended.</span>
+</div>
+</div>
+</div>
+</div>
+
+<div hidden>
+
 <body>
 
 <h1>Build Database</h1>
@@ -85,7 +565,7 @@ position: absolute;
  
 <p>These are based off of yamaha zuma and yamaha vino engines. YMMY</p>
 
-
+<div hidden>
 
 
 <div class="grid-container1">
@@ -218,7 +698,7 @@ position: absolute;
 
 
 <div class="grid-container1">
-	  <div class="grid-item1">Exhaust</div>
+    <div class="grid-item1">Exhaust</div>
   <div class="grid-item">
 <div class="tooltip">Sport-Street
   <span class="tooltiptext">Below 10 k rpm, mostly cast iron cylinders. Safe for stock crank.</span>
@@ -472,6 +952,52 @@ position: absolute;
   <div class="grid-item">Stock</div>
   <div class="grid-item">Stock</div>
 </div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+document.getElementById("column1").innerHTML =
+'Cylinder';
+
+document.getElementById("column2").innerHTML =
+'Exhaust';
+
+document.getElementById("column3").innerHTML =
+'Carb';
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "The stock carb works fine. Just make sure to upjet.";
+}
+
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "When using this exhaust, the stock carb works fine but the 17.5mm carb works great too";
+}
+
+
+function pic1()
+    {
+        document.getElementById("img").src = "../raining.gif";
+        ducument.getElementById("text").innerHTML = "<h2> Responsive </h2>";
+}
+
+</script>
+
+</body>
+</html>
+
 
 
 </body>
