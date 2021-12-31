@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+        <script>
+
+            var myPopup
+
+            function Create() {
+                myPopup = window.open("", "", "width=200, height=100");
+            }
+            function CreateShow(text) {
+                if (!myPopup)
+                    Create();
+                else if (myPopup.closed)
+                    Create();
+                myPopup.document.write(text);
+                myPopup.document.close();
+            }
+
+            function First() {
+                CreateShow("first method");
+	    } 
+
+            function Second() {
+                CreateShow("second method");
+            } 
+
+        </script>
+    </head>
+
+<body>
+    <input type="button" value="Show First" onclick="First()"><br/>
+    <input type="button" value="Show Second" onclick="Second()">
+</body>
+
+</html>
